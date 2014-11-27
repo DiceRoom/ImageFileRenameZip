@@ -1,0 +1,24 @@
+﻿<Window x:Class="DL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ImageFileRenameZip" Height="400" Width="600">
+    <Grid>
+        <ListView HorizontalAlignment="Stretch" Name="DirectoryListView" VerticalAlignment="Stretch" Margin="0,30">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn
+                            Width="476"
+                            Header="ファイルパス"
+                            DisplayMemberBinding="{Binding Path=FilePath}" />
+                    <GridViewColumn
+                            Width="80"
+                            Header="ファイル数"
+                            DisplayMemberBinding="{Binding Path=FileVal}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="圧縮開始" Height="23" HorizontalAlignment="Right" Name="ZipButton" VerticalAlignment="Bottom" Width="113" Margin="0,0,4,4" Click="_ClickZipFiles" />
+        <Button Content="ファイルリネーム" Height="23" HorizontalAlignment="Right" Margin="0,0,120,4" Name="FileRenameButton" VerticalAlignment="Bottom" Width="113" Click="_ClickFileRename" />
+        <Button Content="ディレクトリ読み込み" Height="24" HorizontalAlignment="Stretch" Name="LoadDirectoryButton" VerticalAlignment="Top" Margin="0,3,0,0" Click="_ClickLoadDirectory" />
+    </Grid>
+</Window>

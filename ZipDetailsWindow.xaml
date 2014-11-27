@@ -1,0 +1,11 @@
+﻿<Window x:Class="DL.ZipDetailsSettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="圧縮ファイル情報設定" Height="117" Width="390" Name="ZipDetailsWindow" WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Right" Name="CancelButton" VerticalAlignment="Bottom" Width="75" Margin="0,0,3,3" />
+        <Button Content="OK" Height="23" HorizontalAlignment="Left" Name="OKButton" VerticalAlignment="Bottom" Width="75" Margin="210,0,0,3" />
+        <Label Content="圧縮ファイル名" Height="26" Name="label1" VerticalAlignment="Top" Margin="2,0,266,0" />
+        <TextBox Height="24" HorizontalAlignment="Left" Margin="5,25,0,0" Name="ZipFileTextBox" VerticalAlignment="Top" Width="356" Text="{}{NumKey}" />
+    </Grid>
+</Window>
